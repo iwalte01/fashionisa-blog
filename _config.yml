@@ -19,15 +19,19 @@
 # in the templates via {{ site.myvariable }}.
 
 title: fashionisa
-email: your-email@example.com
+email: fashionisa.blog@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ A fashion and lifestyle blog.
 baseurl: "/fashionisa-blog" # the subpath of your site, e.g. /blog
 url: "https://itwalters22.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+instagram_username: fashionisa.blog
+pinterest_username: isawalters140651
+
+#author field used in minima
+author: Isa Walters
+
+#title logo field 
+title-logo: /images/fashion isa final3.png
 
 # Build settings
 # removed minima theme, as it is now a regular theme
