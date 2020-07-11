@@ -3,5 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: "Fashion"
+title: "Home"
+permalink: /home/
+order: 1
 ---
