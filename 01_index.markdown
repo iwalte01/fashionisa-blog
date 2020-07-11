@@ -5,5 +5,4 @@
 layout: home
 title: "Home"
 permalink: /home/
-order: 1
 ---

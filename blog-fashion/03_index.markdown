@@ -5,5 +5,4 @@
 layout: home
 title: "Fashion"
 permalink: /fashion/
-order: 3
 ---

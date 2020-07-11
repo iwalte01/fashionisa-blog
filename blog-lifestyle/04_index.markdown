@@ -5,5 +5,4 @@
 layout: home
 title: "Lifestyle"
 permalink: /lifestyle/
-order: 4
 ---
