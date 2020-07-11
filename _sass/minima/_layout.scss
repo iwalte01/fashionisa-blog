@@ -5,6 +5,7 @@
   //border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
+  background-color: white;
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -67,7 +68,7 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
+    background-color: white;
   //  border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
