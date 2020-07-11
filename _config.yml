@@ -38,6 +38,7 @@ title-logo: /images/fashion isa final3.png
 # theme: minima
 plugins:
   - jekyll-feed
+ # - searchyll
 
 # Exclude from processing.
 # The following items will not be processed, by default.

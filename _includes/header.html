@@ -31,7 +31,63 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
+          <a><button id="myBtn"> SUBSCRIBE </button></a>
         </div>
+      <!--my code-->
+        <div id="myModal" class="modal">
+
+      <div class="modal-content">
+
+          <span class="close">&times;</span>
+
+      <form class="contact1-form" action="https://github.us10.list-manage.com/subscribe/post?u=a7fa5073db85f9809b02bfe8f&amp;id=1ad96e9384" method = "post" target="_blank">
+
+          <p> Subscribe </p>
+
+          <h2>join fashionisa</h2>
+
+          <p>Be the first to know when a new blog post comes out!</p><br>
+
+          <div>
+
+          <input id="email" class="input1" type="text" name="EMAIL" placeholder=" ENTER YOUR EMAIL ADDRESS" required>
+
+          <button class="contact1-form-btn" type="submit"> <a class="fa fa-envelope-o"></a> </button>
+
+          </div>
+
+      </form>
+
+      </div>
+
+    </div>
+
+    <!--<script type="text/javascript" src="_includes/pop.js"></script>-->
+    <script>// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} </script>
       </nav>
     {%- endif -%}
   </div>
