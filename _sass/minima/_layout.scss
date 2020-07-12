@@ -61,7 +61,7 @@
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child){
-      margin-right: 35px;
+      margin-right: 45px;
     }
   }
 
@@ -213,23 +213,26 @@
   letter-spacing: -1px;
   line-height: 1;
 
+  //text-align
+text-align: center;
+
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
   }
 //added line after
   display: grid;
 
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr auto 1fr;
 
   grid-template-rows: 35px 0;
 
   grid-gap: 10px;
 
-  
+
   font-family: serif;
 }
 
-.page-heading:after{
+.page-heading:after, .page-heading:before{
   content: " ";
 
   margin-top: 20px;
@@ -275,7 +278,8 @@
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
-
+//text-align
+text-align: center;
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
   }
@@ -283,7 +287,7 @@
   //added line after
   display: grid;
 
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr auto 1fr;
 
   grid-template-rows: 35px 0px;
 
@@ -292,7 +296,7 @@
   font-family: serif;
 }
 
-.post-title:after{
+.post-title:after, .post-title:before{
   content: " ";
 
   margin-top: 20px;
