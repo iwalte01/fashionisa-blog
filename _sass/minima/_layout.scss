@@ -207,7 +207,32 @@
 }
 
 .page-heading {
-  @include relative-font-size(2);
+  //@include relative-font-size(2);
+  //added this stuff so it is like the other page types
+   @include relative-font-size(2.625);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+//added line after
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+
+  grid-template-rows: 35px 0;
+
+  grid-gap: 10px;
+}
+
+.page-heading:after{
+  content: " ";
+
+  margin-top: 20px;
+  display: block;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 .post-list-heading {
@@ -250,6 +275,24 @@
   @include media-query($on-laptop) {
     @include relative-font-size(2.25);
   }
+
+  //added line after
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+
+  grid-template-rows: 35px 0;
+
+  grid-gap: 10px;
+}
+
+.post-title:after{
+  content: " ";
+
+  margin-top: 20px;
+  display: block;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 .post-content {
