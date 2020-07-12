@@ -1,24 +1,19 @@
 
 .collage{
-
 	display: grid;
-
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 5%;
-
-  /*	grid-template-columns: 1fr 1fr; */
-
+	grid-column-gap: 4%;
 }
 
 .collage .upper {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
-	grid-gap: 5%;
+	grid-row-gap: 5%;
 }
 
 
 .collage .lower {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
-	grid-gap: 5%;
+	grid-row-gap: 5%;
 }
