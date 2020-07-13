@@ -381,15 +381,15 @@ text-align: center;
 
   background-color: black;
 
-  margin: 35vh auto; /* 35vh from the top and centered*/
+  margin: 10vh auto; /* 35vh from the top and centered*/
 
-  padding: 20px;
+ // padding: 40px;
 
   border: 1px solid white;
 
-  width: 50%; 
+  width: 80%; 
 
-  height: 60%;
+  height: 70%;
 
   position: relative;
 
@@ -403,7 +403,8 @@ text-align: center;
 
   float: right;
 
-  font-size: 28px;
+  font-size: 20px;
+  margin-right: 15px;
 
   font-weight: bold;
 
@@ -442,40 +443,41 @@ text-align: center;
 .modal form {
 
 text-align: center;
-
+//padding-top: 60px;
 }
-
-
 
 .modal form .subbox div {
 
   position: relative;
 
   display: inline-flex;
+  text-align: center;
 
 }
 
 
 
 .modal form h2{
+@include relative-font-size(1.625);
 
-  color: white;
-
-  font-size: 6vw;
+ // font-size: 6%;
 
   font-weight: bolder;
+   color: white;
 
 }
 
 
 
-.modal form p {
+.modal form h3 {
 
   color: white;
 
-  font-size: 2vw;
+  font-size: 10px;
 
   font-weight: bold;
+ // overflow: wrap-text; //added this or somehow shrink text
+// overflow: shrink-text;
 
 }
 
@@ -489,9 +491,9 @@ text-align: center;
 
   text-align: left;
 
-  width: 24vw;
+  width: 220px;
 
-  min-width: 100px;
+// min-width: 100px;
 
   border: black solid 0.5px;
 
@@ -507,9 +509,7 @@ text-align: center;
 
   background-color: white;
 
-  width: 3vw;
-
-  padding-right:5px;
+  width: 35px;
 
   height: 25px;
 
