@@ -387,10 +387,9 @@ text-align: center;
 
   border: 1px solid white;
 
-  //width:; //changed
-  width: $content-width/2;
+  width: 50%; 
 
-  height: auto;
+  height: 60%;
 
   position: relative;
 
@@ -404,7 +403,7 @@ text-align: center;
 
   float: right;
 
- // font-size: 28px;
+  font-size: 28px;
 
   font-weight: bold;
 
@@ -441,8 +440,8 @@ text-align: center;
 
 
 .modal form {
-  text-align: center;
-   color: white;
+
+text-align: center;
 
 }
 
@@ -460,7 +459,9 @@ text-align: center;
 
 .modal form h2{
 
-   @include relative-font-size(3);
+  color: white;
+
+  font-size: 6vw;
 
   font-weight: bolder;
 
@@ -469,7 +470,11 @@ text-align: center;
 
 
 .modal form p {
-  font-size:  $small-font-size;
+
+  color: white;
+
+  font-size: 2vw;
+
   font-weight: bold;
 
 }
@@ -484,9 +489,9 @@ text-align: center;
 
   text-align: left;
 
-  width: $content-width/3.5;
+  width: 24vw;
 
-//  min-width: 100px;
+  min-width: 100px;
 
   border: black solid 0.5px;
 
@@ -502,7 +507,7 @@ text-align: center;
 
   background-color: white;
 
-// width: 3vw;
+  width: 3vw;
 
   padding-right:5px;
 
