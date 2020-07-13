@@ -381,21 +381,20 @@ text-align: center;
 
   background-color: black;
 
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 35vh auto; /* 35vh from the top and centered*/
 
   padding: 20px;
 
   border: 1px solid white;
 
-  width: 50vw; 
+  //width:; //changed
+  width: $content-width/2;
 
-  height: 35vw;
+  height: auto;
 
   position: relative;
 
 }
-
-
 
 /* The Close Button */
 
@@ -405,7 +404,7 @@ text-align: center;
 
   float: right;
 
-  font-size: 28px;
+ // font-size: 28px;
 
   font-weight: bold;
 
@@ -442,14 +441,14 @@ text-align: center;
 
 
 .modal form {
-
-text-align: center;
+  text-align: center;
+   color: white;
 
 }
 
 
 
-.modal form div {
+.modal form .subbox div {
 
   position: relative;
 
@@ -461,9 +460,7 @@ text-align: center;
 
 .modal form h2{
 
-  color: white;
-
-  font-size: 6vw;
+   @include relative-font-size(3);
 
   font-weight: bolder;
 
@@ -472,11 +469,7 @@ text-align: center;
 
 
 .modal form p {
-
-  color: white;
-
-  font-size: 2vw;
-
+  font-size:  $small-font-size;
   font-weight: bold;
 
 }
@@ -491,9 +484,9 @@ text-align: center;
 
   text-align: left;
 
-  width: 24vw;
+  width: $content-width/3.5;
 
-  min-width: 100px;
+//  min-width: 100px;
 
   border: black solid 0.5px;
 
@@ -509,7 +502,7 @@ text-align: center;
 
   background-color: white;
 
-  width: 3vw;
+// width: 3vw;
 
   padding-right:5px;
 
