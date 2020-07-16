@@ -1,6 +1,6 @@
 ---
 layout: page
-title: fashionisa Privacy Policy
+title: Fashionisa Privacy Policy
 permalink: /privacy-policy/
 ---
 
