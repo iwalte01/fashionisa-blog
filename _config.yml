@@ -26,7 +26,7 @@ baseurl: "/fashionisa-blog" # the subpath of your site, e.g. /blog
 url: "https://itwalters22.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_username: fashionisa.blog
 pinterest_username: isawalters140651
-tiktok_username: isa_walters
+tiktok_username: fashionisa.blog
 
 #author field used in minima
 author: Isa Walters
