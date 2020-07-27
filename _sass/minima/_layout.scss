@@ -143,9 +143,22 @@
  // margin-left: 0;
 }
 
+
 //added this
+.contact-list {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+}
+
+//added this
+//.contact-list li,
 .social-media-list li {
   display: inline-block;
+  //added padding to the social icons
+}
+
+.social-media-list li {
+  margin-left: 25px;
 }
 
 .footer-col-wrapper {
