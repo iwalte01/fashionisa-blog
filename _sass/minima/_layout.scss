@@ -147,7 +147,11 @@
 //added this
 .contact-list {
   display: grid;
-  grid-template-columns: auto 1fr 1fr;
+  grid-template-columns: auto auto auto;
+}
+
+.contact-list li {
+  //added a margin for spacing purposes
 }
 
 //added this
@@ -156,6 +160,8 @@
   display: inline-block;
   //added padding to the social icons
 }
+
+//need to wrap every element reeee
 
 .social-media-list li {
   margin-left: 25px;
