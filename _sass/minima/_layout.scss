@@ -164,8 +164,13 @@
 
 li .u-email {
   margin-left: 25px;
-  position: absolute;
+ // position: absolute;
 }
+
+.eletter {
+  list-style: none;
+}
+
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
