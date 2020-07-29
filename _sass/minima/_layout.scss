@@ -143,28 +143,27 @@
  // margin-left: 0;
 }
 
-
 //added this
-.contact-list {
-  display: grid;
+.contact-list { //grid flex display so stuff moves to the next line
+  display: grid-flex;
   grid-template-columns: auto auto auto;
-}
-
-.contact-list li {
-  //added a margin for spacing purposes
+  //wrap the containers??
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-top: 5px;
 }
 
 //added this
-//.contact-list li,
 .social-media-list li {
   display: inline-block;
-  //added padding to the social icons
+  margin-left: 25px;
 }
 
 //need to wrap every element reeee
 
-.social-media-list li {
-  margin-left: 25px;
+li .u-email {
+  margin-left: 50px;
+  position: absolute;
 }
 
 .footer-col-wrapper {

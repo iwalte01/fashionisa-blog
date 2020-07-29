@@ -2,18 +2,17 @@
   <data class="u-url" href="{{ / | relative_url }}"></data>
 
   <!--<div class="wrapper">-->
-
     <div class="footer-col-wrapper">
 
       <div class="footer-col footer-col-2">
         {%- include social.html -%}
+        {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}" target="_blank" class="fa fa-envelope-o">{{ site.email }}</a></li>
+        {%- endif -%}
       </div>
 
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}" target="_blank" class="fa fa-envelope-o">{{ site.email }}</a></li>
-            {%- endif -%}
              <li><div class="rssfeed">
               <p class="rss-subscribe"><!--subscribe --><a class="ftxt" href="{{ "/feed.xml" | relative_url }}"><!--via-->RSS</a></p>
              </div></li>
