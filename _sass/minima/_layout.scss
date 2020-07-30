@@ -364,6 +364,9 @@ text-align: center;
   }
 }
 
+/**
+ * Subscription Box
+ */
 #myBtn {
 
   border: none;
@@ -559,4 +562,14 @@ text-align: center;
 
 symbol path {
   fill: white;
+}
+
+/**
+ * Home Page
+ */
+
+.home {
+  .thmb {
+    height: 280px;
+  }
 }

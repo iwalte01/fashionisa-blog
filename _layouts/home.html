@@ -11,28 +11,22 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <div class="latest-post"> <!-- created a function to write the post list(s) -->
+      {%- for post in site.posts limit: 1 -%}
+      {% include make_postlist.html %}
+      {%- endfor -%}
+    </div>
     <ul class="post-list">
-      {%- for post in site.posts limit: 6 -%} <!--added a limit here for testing - will eventually change to a bigger number-->
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-        <!-- added a thumbnail if statement-->
-        <p>{% if post.thumbnail %}
-          <img src="{{ post.thumbnail }}" style="height: 280px" align="center" />
-        {% else %}
-        <img src="http://placehold.it/780x480&text=No+Thumbnail+available"
-        style="height: 280px" align="center" />
-        {% endif %}</p>
-      <!--end of thumbnail statement-->
-      </li>
+      <!--second_recent tells us if we've gotten to the second most recent post-->
+      {%- assign second_recent = false -%}
+      <!--added a limit here for the 5 recent posts I will display under the latest-->
+      {%- for post in site.posts limit: 6 -%} 
+      {%- if second_recent == true -%}
+        {%- include make_postlist.html -%}
+      {%- else -%}
+      {%- assign second_recent = true -%} <!--is this how you change a variable?? or only assigning it?-->
+      {% endif %}
+
       {%- endfor -%}
     </ul>
 
