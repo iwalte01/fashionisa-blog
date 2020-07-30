@@ -12,7 +12,7 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts limit: 2 -%} <!--added a limit here for testing - will eventually change to a bigger number-->
+      {%- for post in site.posts limit: 6 -%} <!--added a limit here for testing - will eventually change to a bigger number-->
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -24,6 +24,14 @@ layout: default
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
+        <!-- added a thumbnail if statement-->
+        <p>{% if post.thumbnail %}
+          <img src="{{ post.thumbnail }}" style="height: 280px" align="center" />
+        {% else %}
+        <img src="http://placehold.it/780x480&text=No+Thumbnail+available"
+        style="height: 280px" align="center" />
+        {% endif %}</p>
+      <!--end of thumbnail statement-->
       </li>
       {%- endfor -%}
     </ul>

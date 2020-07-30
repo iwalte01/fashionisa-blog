@@ -25,6 +25,14 @@ layout: default
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
+        <!-- added a thumbnail if statement-->
+        <p>{% if post.thumbnail %}
+          <img src="{{ post.thumbnail }}" style="height: 280px" align="center" />
+        {% else %}
+        <img src="http://placehold.it/780x480&text=No+Thumbnail+available"
+        style="height: 280px" align="center" />
+        {% endif %}</p>
+      <!--end of thumbnail statement-->
       </li>
       {%- endif -%}
       {%- endfor -%}
