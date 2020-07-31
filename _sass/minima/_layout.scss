@@ -60,7 +60,7 @@
 
     // Gaps between nav items, but not on the last one
    // &:not(:last-child){
-      margin-right: 35px;
+      margin-right: 40px;
    // }
   }
 
@@ -93,6 +93,9 @@
 
       > svg {
         fill: $grey-color-dark;
+        //made the icon bigger
+        width: 30px;
+        height: 30px;
       }
     }
 
@@ -290,6 +293,8 @@ text-align: center;
 
 .post-list-heading {
   @include relative-font-size(1.75);
+  //added a specific font family
+  font-family: serif;
 }
 
 .post-list {
@@ -594,6 +599,19 @@ symbol path {
   .latest-post .post-link .post-info {
     background-color: white;
     height: 400px;
+    color: black;
+    text-align: left;
+    .p-title {
+        font-size: 1em;
+        font-family: serif;
+        font-weight: bold;
+    }
+    .des {
+      font-size: 0.7em;
+    }
+    .txt-box {
+      margin: 20px;
+    }
   }
 
   .post-list .thmb {
@@ -618,7 +636,9 @@ symbol path {
     width: fill;
     height: 150px;
     background-color: white;
-    margin-top: -15px;
+    margin-top: -20px;
+    color: black;
+    font-family: serif;
   }
 
   @include media-query($on-palm) {
@@ -626,16 +646,18 @@ symbol path {
     .post-list {
       display: block;
     }
+
     .post-list li .post-link .post-info {
       //responsive width
       width: fill;
       height: 150px;
     }
+
     .post-list li .post-link .thmb {
       //responsive height
       width: 100%;
       height: auto;
-      margin-bottom: -15px;
+      margin-bottom: -20px;
     }
   }
 
@@ -645,19 +667,23 @@ symbol path {
   }
 
   @include media-query($on-palm) {
+
     .latest-post .post-link {
       display: inline;
     }
+
     .latest-post .post-link .post-info {
       //responsive width
       width: fill;
       height: 200px;
+      //change title font
     }
+
     .latest-post .post-link .thmb {
       //responsive height
       width: 100%;
       height: auto;
-      margin-bottom: -15px;
+      margin-bottom: -20px;
     }
   }
 }
@@ -674,4 +700,9 @@ symbol path {
       display: block;
     }
   }
+}
+
+
+.post-link:hover {
+  text-decoration: none;
 }
