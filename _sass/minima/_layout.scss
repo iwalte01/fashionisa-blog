@@ -611,6 +611,9 @@ symbol path {
     }
     .txt-box {
       margin: 20px;
+      .cat {
+      font-size: 0.7em;
+      }
     }
   }
 
@@ -634,11 +637,27 @@ symbol path {
   //control the sizes and styles of each grid element
   .post-list li .post-info {
     width: fill;
-    height: 150px;
+    height: 250px;
     background-color: white;
-    margin-top: -20px;
+    margin-top: -30px;
     color: black;
-    font-family: serif;
+    text-align: left;
+    .p-title {
+        font-size: 0.75em;
+        font-family: serif;
+        font-weight: bold;
+    }
+    .des {
+      font-size: 0.5em;
+    }
+
+    .txt-box {
+      margin: 20px;
+      padding-top: 10px;
+      .cat {
+        font-size: 0.5em;
+      }
+    }
   }
 
   @include media-query($on-palm) {
@@ -650,7 +669,12 @@ symbol path {
     .post-list li .post-link .post-info {
       //responsive width
       width: fill;
-      height: 150px;
+      height: 250px;
+      padding-top: 30px;
+      text-overflow: wrap;
+      .txt-box {
+        margin: 20px;
+      }
     }
 
     .post-list li .post-link .thmb {
