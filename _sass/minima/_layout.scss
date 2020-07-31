@@ -585,10 +585,22 @@ symbol path {
  */
 
 .home {
-  .thmb {
+  .latest-post .thmb {
     max-width: 100%;
-    height: auto;
+    height: 400px;
   }
+
+
+  .latest-post .post-link .post-info {
+    background-color: white;
+    height: 400px;
+  }
+
+  .post-list .thmb {
+    height: 200px;
+    max-width: 100%;
+  }
+
   .latest-post {
     list-style: none;
   }
@@ -596,6 +608,9 @@ symbol path {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    //added gaps between posts
+    grid-column-gap: 4%;
+    grid-row-gap: 4%;
   }
   @include media-query($on-palm) {
   //get rid of display lol
@@ -605,12 +620,22 @@ symbol path {
   }
   .latest-post .post-link { //only applies to the latest post
     display: grid;
-    grid-template-columns: 0.5fr 2fr;
+    grid-template-columns: 0.75fr 2fr;
   }
 
   @include media-query($on-palm) {
     .latest-post .post-link {
       display: inline;
+    }
+    .latest-post .post-link .post-info {
+      //responsive height
+      width: fill;
+      height: 150px;
+    }
+    .latest-post .post-link .thmb {
+      //responsive height
+      width: 100%;
+      height: auto;
     }
   }
 }
