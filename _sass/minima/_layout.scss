@@ -612,7 +612,7 @@ symbol path {
     .txt-box {
       margin: 20px;
       .cat {
-      font-size: 0.7em;
+      font-size: 0.6em;
       }
     }
   }
@@ -653,7 +653,7 @@ symbol path {
 
     .txt-box {
       margin: 20px;
-      padding-top: 10px;
+      padding-top: 30px;
       .cat {
         font-size: 0.5em;
       }
@@ -671,6 +671,7 @@ symbol path {
       width: fill;
       height: 250px;
       padding-top: 30px;
+      padding-bottom: 10px;
       text-overflow: wrap;
       .txt-box {
         margin: 20px;
@@ -700,7 +701,12 @@ symbol path {
       //responsive width
       width: fill;
       height: 200px;
-      //change title font
+      //fit the text into the box
+      padding-top: 20px;
+      padding-bottom: 60px;
+      .txt-box{
+        margin: 20px;
+      }
     }
 
     .latest-post .post-link .thmb {
