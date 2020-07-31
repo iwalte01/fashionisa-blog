@@ -612,15 +612,36 @@ symbol path {
     grid-column-gap: 4%;
     grid-row-gap: 4%;
   }
+
+  //control the sizes and styles of each grid element
+  .post-list li .post-info {
+    width: fill;
+    height: 150px;
+    background-color: white;
+    margin-top: -15px;
+  }
+
   @include media-query($on-palm) {
   //get rid of display lol
     .post-list {
       display: block;
     }
+    .post-list li .post-link .post-info {
+      //responsive width
+      width: fill;
+      height: 150px;
+    }
+    .post-list li .post-link .thmb {
+      //responsive height
+      width: 100%;
+      height: auto;
+      margin-bottom: -15px;
+    }
   }
+
   .latest-post .post-link { //only applies to the latest post
     display: grid;
-    grid-template-columns: 0.75fr 2fr;
+    grid-template-columns: 1fr 0.5fr;
   }
 
   @include media-query($on-palm) {
@@ -628,14 +649,15 @@ symbol path {
       display: inline;
     }
     .latest-post .post-link .post-info {
-      //responsive height
+      //responsive width
       width: fill;
-      height: 150px;
+      height: 200px;
     }
     .latest-post .post-link .thmb {
       //responsive height
       width: 100%;
       height: auto;
+      margin-bottom: -15px;
     }
   }
 }
