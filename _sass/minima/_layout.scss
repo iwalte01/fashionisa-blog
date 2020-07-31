@@ -724,6 +724,26 @@ symbol path {
     grid-template-columns: 1fr 2fr;
   }
 
+  .post-link .post-info {
+      background-color: white;
+      padding-top: 20px;
+      padding-bottom: 10px;
+      text-overflow: wrap;
+      .txt-box {
+        margin: 20px;
+      }
+  }
+
+  .post-link .thmb {
+      width: fill;
+      height: 200px;
+  }
+
+  .post-link .post-info {
+    width: fill;
+    height: 200px;
+  }
+
   @include media-query($on-palm) {
   //get rid of display lol
     .post-link {
