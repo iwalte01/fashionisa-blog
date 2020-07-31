@@ -592,10 +592,10 @@ symbol path {
   .latest-post {
     list-style: none;
   }
-  .post-list {
+  .post-list { //need to style the titles at the bottom of the posts
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   @include media-query($on-palm) {
   //get rid of display lol
@@ -603,5 +603,28 @@ symbol path {
       display: block;
     }
   }
+  .latest-post .post-link { //only applies to the latest post
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+  }
+
+  @include media-query($on-palm) {
+    .latest-post .post-link {
+      display: inline;
+    }
+  }
 }
 
+.home-second {
+  .post-link {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @include media-query($on-palm) {
+  //get rid of display lol
+    .post-link {
+      display: block;
+    }
+  }
+}

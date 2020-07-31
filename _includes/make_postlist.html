@@ -1,10 +1,17 @@
 
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+            <div class="post-info">
+             <span class="post-meta">{{ post.date | date: date_format }}</span> <!-- moved the date here-->
+            <h3>{{ post.title | escape }}</h3> <!-- added a heading around this to separate it-->
+             <!-- show the description -->
+            <p>{%- if post.description -%}
+              {{ post.description }}
+            {%- endif -%}</p>
+          </div>
+          <div class="image">
              <!-- added a thumbnail that you can click on-->
             <p>{% if post.thumbnail %}
             <img class="thmb" src="{{ post.thumbnail }}"/>
@@ -12,13 +19,10 @@
             <img class="thmb" src="http://placehold.it/780x480&text=No+Thumbnail+available"/>
             {% endif %}</p>
            <!--end of thumbnail statement-->
+         </div>
           </a>
         </h3>
-        {%- if site.show_excerpts -%}
+        <!--{%- if site.show_excerpts -%}
           {{ post.excerpt }}
-        {%- endif -%}
-        <!-- show the description -->
-        {%- if post.description -%}
-          {{ post.description }}
-        {%- endif -%}
+        {%- endif -%}-->
       </li>
