@@ -10,12 +10,13 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <h2 class="post-list-heading">The Latest</h2><!--{{ page.list_title | default: "The Latest" }}-->
     <div class="latest-post"> <!-- created a function to write the post list(s) -->
       {%- for post in site.posts limit: 1 -%}
       {% include make_postlist.html %}
       {%- endfor -%}
     </div>
+    <h2 class="post-list-heading">Recent Posts</h2>
     <ul class="post-list">
       <!-- count how many posts I have left to fill-->
       {%- assign num_posts = 6 -%}

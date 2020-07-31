@@ -26,7 +26,7 @@ $table-text-align: left !default;
 $content-width:    800px !default;
 
 $on-palm:          800px !default; //changed the default from 600 to 800
-$on-laptop:        800px !default;
+$on-laptop:        900px !default; //changed from 800 to 900
 
 // Use media queries like this:
 // @include media-query($on-palm) {

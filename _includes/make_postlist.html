@@ -5,6 +5,13 @@
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
+             <!-- added a thumbnail that you can click on-->
+            <p>{% if post.thumbnail %}
+            <img class="thmb" src="{{ post.thumbnail }}"/>
+            {% else %}
+            <img class="thmb" src="http://placehold.it/780x480&text=No+Thumbnail+available"/>
+            {% endif %}</p>
+           <!--end of thumbnail statement-->
           </a>
         </h3>
         {%- if site.show_excerpts -%}
@@ -14,11 +21,4 @@
         {%- if post.description -%}
           {{ post.description }}
         {%- endif -%}
-        <!-- added a thumbnail if statement-->
-        <p>{% if post.thumbnail %}
-          <img class="thmb" src="{{ post.thumbnail }}"/>
-        {% else %}
-        <img class="thmb" src="http://placehold.it/780x480&text=No+Thumbnail+available"/>
-        {% endif %}</p>
-      <!--end of thumbnail statement-->
       </li>

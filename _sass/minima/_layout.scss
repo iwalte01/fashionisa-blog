@@ -586,7 +586,22 @@ symbol path {
 
 .home {
   .thmb {
-    height: 280px;
+    max-width: 100%;
+    height: auto;
+  }
+  .latest-post {
+    list-style: none;
+  }
+  .post-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  @include media-query($on-palm) {
+  //get rid of display lol
+    .post-list {
+      display: block;
+    }
   }
 }
 
