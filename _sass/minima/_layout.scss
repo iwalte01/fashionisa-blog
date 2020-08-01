@@ -724,30 +724,57 @@ symbol path {
     grid-template-columns: 1fr 2fr;
   }
 
-  .post-link .post-info {
-      background-color: white;
-      padding-top: 20px;
-      padding-bottom: 10px;
-      text-overflow: wrap;
-      .txt-box {
-        margin: 20px;
-      }
-  }
-
   .post-link .thmb {
-      width: fill;
-      height: 200px;
+    max-width: 100%;
+    height: 200px;
   }
 
   .post-link .post-info {
-    width: fill;
+    background-color: white;
     height: 200px;
+    color: black;
+    text-overflow: wrap;
+    text-align: left;
+    .p-title {
+        font-size: 0.75em;
+        font-family: serif;
+        font-weight: bold;
+    }
+    .des {
+      font-size: 0.5em;
+    }
+
+    .txt-box {
+      margin: 10px;
+      .cat {
+        font-size: 0.5em;
+      }
+    }
   }
 
   @include media-query($on-palm) {
   //get rid of display lol
     .post-link {
       display: block;
+    }
+
+    .post-list li .post-link .post-info {
+      //responsive width
+      width: fill;
+      height: 250px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-overflow: wrap;
+      .txt-box {
+        margin: 20px;
+      }
+      margin-top: -20px;
+    }
+
+    .post-list li .post-link .thmb {
+      //responsive height
+      width: 100%;
+      height: auto;
     }
   }
 }
