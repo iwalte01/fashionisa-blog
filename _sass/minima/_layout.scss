@@ -37,7 +37,10 @@
 .site-nav {
  // float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
-
+  //keep spacing even on ends
+  .trigger {
+    margin-left: 65px;
+  }
   .nav-trigger {
       display: none;
   }
@@ -60,7 +63,7 @@
 
     // Gaps between nav items, but not on the last one
    // &:not(:last-child){
-      margin-right: 40px;
+      margin-right: 6%;
    // }
   }
 
@@ -782,4 +785,13 @@ symbol path {
 
 .post-link:hover {
   text-decoration: none;
+}
+
+
+//search button
+#srch {
+  color: black;
+  border: none;
+  background-color: white;
+  margin-right: 55px;
 }
