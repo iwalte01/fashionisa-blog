@@ -69,10 +69,10 @@
 
   @include media-query($on-palm) {
     position: absolute;
-    top: 9px;
+    top: 9px; 
     right: $spacing-unit / 2;
     background-color: white;
-  //  border: 1px solid $grey-color-light;
+    //border: 0.5px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
 
@@ -91,7 +91,7 @@
       width: 36px;
       height: 26px;
       line-height: 0;
-      padding-top: 10px;
+      margin-top: 10px;
       text-align: center;
 
       > svg {
@@ -109,7 +109,8 @@
 
     input:checked ~ .trigger {
       display: block;
-      padding-bottom: 5px;
+      padding-left: 0;
+      margin-left: 0;
     }
 
     .page-link {
@@ -121,9 +122,8 @@
       }
       margin-left: 20px;
     }
-    #search-input {
-    margin-right: 10px;
-    margin-left: 20px;
+    #srch {
+      margin-right: 5px;
     }
   }
 }
@@ -725,11 +725,13 @@ symbol path {
   .post-link {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-bottom: -45px;
   }
 
   .post-link .thmb {
     max-width: 100%;
     height: 200px;
+    border-bottom: 1px solid $grey-color-light;
   }
 
   .post-link .post-info {
@@ -738,6 +740,7 @@ symbol path {
     color: black;
     text-overflow: wrap;
     text-align: left;
+    border-bottom: 1px solid $grey-color-light;
     .p-title {
         font-size: 0.75em;
         font-family: serif;
@@ -748,7 +751,7 @@ symbol path {
     }
 
     .txt-box {
-      margin: 10px;
+      padding: 10px;
       .cat {
         font-size: 0.5em;
       }
@@ -759,6 +762,7 @@ symbol path {
   //get rid of display lol
     .post-link {
       display: block;
+      margin-bottom: 0;
     }
 
     .post-list li .post-link .post-info {
@@ -767,6 +771,7 @@ symbol path {
       height: 250px;
       padding-top: 10px;
       padding-bottom: 10px;
+      border-bottom: none;
       text-overflow: wrap;
       .txt-box {
         margin: 20px;
@@ -778,6 +783,7 @@ symbol path {
       //responsive height
       width: 100%;
       height: auto;
+      border-bottom: none;
     }
   }
 }
