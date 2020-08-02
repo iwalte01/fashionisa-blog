@@ -41,6 +41,7 @@
   .trigger {
     margin-left: 10%;
   }
+
   .nav-trigger {
       display: none;
   }
@@ -145,11 +146,6 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.footer-con {
-  //move stuff in footer over
-  margin-left: 15%;
-}
-
 .wb-list,
 .social-media-list {
   list-style: none;
@@ -169,7 +165,7 @@
 .social-media-list li {
   display: inline-block;
   &:not(:first-child){
-       margin-left: 20px; //changed from 25 to 20
+       margin-left: 25px; //changed from 25 to 20
   }
 }
 
@@ -790,7 +786,7 @@ symbol path {
   color: black;
   border: none;
   background-color: white;
-  margin-right: 55px;
+  margin-right: 10%;
 }
 
 
