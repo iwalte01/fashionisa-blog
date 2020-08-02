@@ -800,3 +800,9 @@ symbol path {
     margin-left: 25%;
     position: center;
 }
+
+#results-container {
+//move results down
+  margin-top: 25px;
+  list-style: none;
+}

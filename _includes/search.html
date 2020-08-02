@@ -1,7 +1,9 @@
 <!-- Html Elements for Search -->
 <!--<input type="text" id="search-input" placeholder="Search...">-->
 <!--<ul id="results-container"></ul> this goes elsewhere-->
-<ul id="results-container"></ul>
+<div class="home-second">
+<ul id="results-container" class="post-list"></ul>
+</div>
 <!-- Script pointing to search-script.js -->
 <script src="/fashionisa-blog/search-script.js" type="text/javascript"></script>
 
@@ -10,6 +12,8 @@
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
+  searchResultTemplate: '<li><a href="{url}" class="post-link"><div class="image"><p><img class="thmb" src="{thumbnail}"/></p></div><div class="post-info"><div class="txt-box><p class="cat">{category}</p><span class="post-meta">{date}</span><h3 class="p-title">{title}</h3><p class="des">{description}</p></div></div></a></li>',
   json: '/fashionisa-blog/search.json'
 })
 </script>
+<!---need to fix margin on nav bar so it looks more even on either side of the search bar/title image-->
