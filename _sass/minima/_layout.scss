@@ -16,7 +16,7 @@
   font-weight: 300;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
-  margin-left: 25%; 
+  margin-left: 23%; 
  // margin-bottom: 0;
  // float: left;
 
@@ -39,7 +39,7 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   .trigger {
     position: center;
-    margin-left: 160px;
+    margin-left: 150px;
     margin-right: 10px;
   }
 
@@ -808,7 +808,7 @@ symbol path {
 #search-input {
     max-width: 100%;
     width: 55%;
-    margin-left: 25%;
+    margin-left: 23%;
     position: center;
 }
 
@@ -816,5 +816,12 @@ symbol path {
 //move results down
   margin-top: 25px;
   list-style: none;
+}
+
+#results-container li {
+//first 5 children 
+  &:not(:nth-child(-n+5)){
+      display:none;
+  }
 }
 

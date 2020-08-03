@@ -25,13 +25,10 @@ layout: default
 </div>
 <script>
 $(function(){
-    $("#myList li").slice(0, 3).show(); // select the first ten
+    $("#myList li").slice(0, 5).show(); // select the first ten
     $("#loadMore").click(function(e){ // click event for load more
         e.preventDefault();
-        $("#myList li:hidden").slice(0, 5).show(); // select next 10 hidden divs and show them
-       /* if($("#myList li:hidden").length == 0){ // check if any hidden divs still exist
-            alert("No more divs"); // alert if there are none left
-        } */
+        $("#myList li:hidden").slice(0, 5).show(); // show next 5
     });
 });
 </script>

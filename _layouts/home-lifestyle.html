@@ -24,7 +24,7 @@ layout: default
 </div>
 <script>
 $(function(){
-    $("#myList li").slice(0, 3).show(); // select the first ten
+    $("#myList li").slice(0, 5).show(); // select the first ten
     $("#loadMore").click(function(e){ // click event for load more
         e.preventDefault();
         $("#myList li:hidden").slice(0, 5).show(); // select next 10 hidden divs and show them
