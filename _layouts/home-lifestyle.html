@@ -10,16 +10,27 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-   <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>-->
-    <ul class="post-list">
-      {%- for post in site.posts -%}
+   <ul id="myList" class="post-list">
+      {%- for post in site.posts -%} <!-- add a limit to call see more button, also 
+      need to edit the screen content width thing so the desktop versions stays for longer when you minimize the screen-->
       {%- if post.category == "Lifestyle"-%}
        {% include make_postlist.html %}
       {%- endif -%}
       {%- endfor -%}
     </ul>
-
+  <div id="loadMore">Show more +</div>
   <!--  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
   {%- endif -%}
-
 </div>
+<script>
+$(function(){
+    $("#myList li").slice(0, 3).show(); // select the first ten
+    $("#loadMore").click(function(e){ // click event for load more
+        e.preventDefault();
+        $("#myList li:hidden").slice(0, 5).show(); // select next 10 hidden divs and show them
+       /* if($("#myList li:hidden").length == 0){ // check if any hidden divs still exist
+            alert("No more divs"); // alert if there are none left
+        } */
+    });
+});
+</script>

@@ -710,7 +710,18 @@ symbol path {
 }
 
 .home-second {
-  .post-link {
+
+#myList li{ display:none;
+}
+#loadMore {
+    color:green;
+    cursor:pointer;
+}
+#loadMore:hover {
+    color:black;
+}
+
+ .post-link {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-bottom: -45px;
@@ -773,7 +784,7 @@ symbol path {
       height: auto;
       border-bottom: none;
     }
-  }
+  } 
 }
 
 

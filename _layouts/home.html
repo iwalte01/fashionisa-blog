@@ -21,15 +21,15 @@ layout: default
       <!-- count how many posts I have left to fill-->
       <!--{%- assign num_posts = 6 -%}-->
       <!--second_recent tells us if we've gotten to the second most recent post-->
-      {%- assign second_recent = false -%}
+      <!--{%- assign second_recent = false -%}-->
       <!--added a limit here for the 6 recent posts I will display under the latest-->
-      {%- for post in site.posts limit: 7 -%} 
-      {%- if second_recent == true -%}
+      {%- for post in site.posts offset: 1 limit: 6 -%} 
+      <!--{%- if second_recent == true -%}-->
         {%- include make_postlist.html -%}
         <!--{%- assign num_posts = num_posts | minus: 1 -%}-->
-      {%- else -%}
-      {%- assign second_recent = true -%} <!--is this how you change a variable?? or only assigning it?-->
-      {%- endif -%}
+      <!--{%- else -%}
+      {%- assign second_recent = true -%}--> <!--is this how you change a variable?? or only assigning it?-->
+      <!--{%- endif -%}-->
       {%- endfor -%}
       <!-- if we haven't filled the posts that should be filled-->
       <!--{%- for i in (1..num_posts) -%}
