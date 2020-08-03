@@ -16,7 +16,7 @@
   font-weight: 300;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
-  margin-left: 25%;
+  margin-left: 25%; 
  // margin-bottom: 0;
  // float: left;
 
@@ -37,9 +37,10 @@
 .site-nav {
  // float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
-  //keep spacing even on ends
   .trigger {
-    margin-left: 10%;
+    position: center;
+    margin-left: 160px;
+    margin-right: 10px;
   }
 
   .nav-trigger {
@@ -64,7 +65,7 @@
 
     // Gaps between nav items, but not on the last one
    // &:not(:last-child){
-      margin-right: 6%;
+      margin-right: 3%;
    // }
   }
 
@@ -786,7 +787,6 @@ symbol path {
   color: black;
   border: none;
   background-color: white;
-  margin-right: 10%;
 }
 
 
