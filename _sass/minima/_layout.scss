@@ -124,9 +124,6 @@
       }
       margin-left: 20px;
     }
-    #srch {
-      margin-right: 5px;
-    }
   }
 }
 
@@ -807,8 +804,7 @@ symbol path {
 
 #search-input {
     max-width: 100%;
-    width: 55%;
-    margin-left: 23%;
+    width: 100%;
     position: center;
 }
 
@@ -825,3 +821,6 @@ symbol path {
   }
 }
 
+#loadMore {
+  display: none;
+}

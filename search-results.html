@@ -5,9 +5,18 @@ title: Results for
 ---
 
 <!-- added the rest of the search stuff - could do search.js file ooh-->
-<input type="text" id="search-input" placeholder="Search..."><br>
+<input type="text" id="search-input" placeholder="Search..." oninput="showMore()"><br>
 {% include search.html %}
 <div id="loadMore">Show more +</div>
+<script>
+function showMore(){
+	if(document.getElementById("search-input").value.length == 0){
+	   document.getElementById("loadMore").style.display = 'none';
+	}else{
+	   document.getElementById("loadMore").style.display = 'block';
+	}
+}
+</script>
 <script>
 $(function(){
     $("#results-container li").slice(0, 5).show(); // select the first ten
