@@ -29,6 +29,9 @@ $(function(){
     $("#loadMore").click(function(e){ // click event for load more
         e.preventDefault();
         $("#myList li:hidden").slice(0, 5).show(); // show next 5
+         if($("#myList li:hidden").length == 0){ // check if any hidden divs exist
+           $("#loadMore").hide(); // alert if there are none left
+        } 
     });
 });
 </script>

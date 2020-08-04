@@ -806,11 +806,12 @@ symbol path {
     max-width: 100%;
     width: 100%;
     position: center;
+    margin-right: 100px;
 }
 
 #results-container {
 //move results down
-  margin-top: 25px;
+  margin-top: 10px;
   list-style: none;
 }
 
@@ -821,6 +822,8 @@ symbol path {
   }
 }
 
-#loadMore {
+#load, #res {
   display: none;
+  margin-top: 15px;
 }
+
