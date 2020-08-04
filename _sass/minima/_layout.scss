@@ -125,9 +125,6 @@
       margin-left: 20px;
     }
 
-    #search-input {
-      margin-right: 200px;
-    }
   }
 }
 
@@ -807,10 +804,9 @@ symbol path {
  */
 
 #search-input {
-    max-width: 100%;
-    width: 100%;
+    width: 80%;
     position: center;
-    margin-right: 100px;
+    margin-left: 11%;
 }
 
 #results-container {
