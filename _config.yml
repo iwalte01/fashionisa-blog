@@ -34,6 +34,11 @@ author: Isa Walters
 #title logo field 
 title-logo: /images/fashion isa final3.png
 
+#analytics
+jekyll_analytics:
+  GoogleAnalytics:
+    id: UA-174454814-1
+
 # Build settings
 # removed minima theme, as it is now a regular theme
 # theme: minima
