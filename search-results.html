@@ -18,11 +18,7 @@ function showMore(){
 		document.getElementById("res").style.display = 'block';
 	   	var x =  document.getElementById("search-input").value; 
        	document.getElementById("res").innerHTML = "Results for '" + x + "'"; 
-	   if($("#results-container li:hidden").length == 0){
-        	$("#load").hide();
-       }else{
-       		 document.getElementById("load").style.display = 'block';
-       }
+       	document.getElementById("load").style.display = 'block';
 	}
 }
 
@@ -31,9 +27,6 @@ $(function(){
     $("#load").click(function(e){ // click event for load more
         e.preventDefault();
         $("#results-container li:hidden").slice(0, 5).show(); // select next 5 posts
-        if($("#results-container li:hidden").length == 0){
-        	$("#load").hide();
-        }
     });
 });
 </script>
