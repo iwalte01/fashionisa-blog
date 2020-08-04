@@ -39,7 +39,9 @@ title-logo: /images/fashion isa final3.png
 # theme: minima
 plugins:
   - jekyll-feed
-  - jeckyll-seo-tag
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-analytics
  # - searchyll
 
 # Exclude from processing.
