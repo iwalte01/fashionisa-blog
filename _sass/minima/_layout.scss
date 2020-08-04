@@ -712,13 +712,13 @@ symbol path {
 #myList li{ display:none;
 }
 #loadMore {
-    color: white;
-    background-color: black;
-    border: none;
-    color: white;
-    background-color: black;
-    border: none;
-    padding: 5px;
+  color: white;
+  background-color: black;
+  border: none;
+  font-size: 1.2em;
+  font-stype: serif;
+  padding: 10px;
+  width: 100%;
 }
 
  .post-link {
@@ -831,12 +831,12 @@ symbol path {
 
 #load {
   color: white;
-  background-color: $grey-color-dark;
+  background-color: black;
   border: none;
+  font-size: 1.2em;
+  font-stype: serif;
   padding: 10px;
-  margin-left: 42%;
-  margin-top: 50px;
-  border-radius: 5px;
+  width: 100%;
 }
 
 #no-result {
