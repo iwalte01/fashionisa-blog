@@ -18,6 +18,25 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+  <div class="related-posts">
+      <!--include thumbnail image, title, and links to that page and eveerything-- but change the format-should i do all the related posts or just 3? - meh all of them and a scroll left right <> thing-->
+      <!--loop through all the posts on the website-->
+      {%- assign tg = false -%}
+      {%- for post in site.posts -%} 
+        {%- for x in post.tags -%} <!--go through all of the tags on this page-->
+          {%- if page.tags contains x -%} 
+          <!-- we only need to know if the post has any of the tags that are in the current article,, hence the break-->
+            {%- assign tg = true -%} <!-- need to format this-->
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if tg == true -%}
+          {% include make_postlist.html %}
+        {%- endif -%} 
+        {%- assign tg = false -%} <!-- reset to false for the next post-->
+  {%- endfor -%}
+  <!--ok I think this works. now i just have to format and check for bugs-->
+  </div>
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}

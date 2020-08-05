@@ -5,22 +5,31 @@ title: Results for
 ---
 
 <!-- added the rest of the search stuff - could do search.js file ooh-->
-<input type="text" id="search-input" placeholder="Search..." oninput="showMore()" ><br>
+<input type="text" id="search-input" placeholder="Search..." onkeypress="seeMore()" ><br>
 <div id="res"></div>
 {% include search.html %}
 <button id="load">SEE MORE</button>
 <script>
 
 function showMore(){
-    if(document.getElementById("search-input").value.length == 0){
+	if($("#results-container li:visible").length < 5){ // check if any hidden divs exist
+           $("#load").hide(); // alert if there are none left
+ 	}	
+ 	if(document.getElementById("search-input").value.length == 0){
 	   document.getElementById("load").style.display = 'none';
 	   document.getElementById("res").style.display = 'none';
 	}else{
 		document.getElementById("res").style.display = 'block';
 	   	var x =  document.getElementById("search-input").value; 
        	document.getElementById("res").innerHTML = "Results for '" + x + "'"; 
-       	document.getElementById("load").style.display = 'block';
+ 		document.getElementById("load").style.display = 'block';
 	}
+}
+
+function more{
+	if($("#results-container li:visible").length >= 5){ // check if any hidden divs exist
+            $("#load").show();
+ 	}
 }
 
 $(function(){
