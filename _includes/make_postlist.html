@@ -13,17 +13,17 @@
            <!--end of thumbnail statement-->
          </div>
          <div class="post-info">
-          <div class="txt-box">
+         <div class="txt-box">
             <p class="cat"> {%- if post.category -%}
               {{ post.category }}
-            {%- endif -%}<p>
-             <span class="post-meta">{{ post.date | date: date_format }}</span> <!-- moved the date here-->
+            {%- endif -%}</p>
+             <span class="post-meta"> {{ post.date | date: date_format }}</span> <!-- moved the date here-->
             <h3 class="p-title">{{ post.title | escape }}</h3> <!-- added a heading around this to separate it-->
              <!-- show the description -->
             <p class="des">{%- if post.description -%}
               {{ post.description }}
             {%- endif -%}</p>
-          </div>
+         </div>
         </div>
           </a>
         </h3>
