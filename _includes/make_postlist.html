@@ -2,13 +2,13 @@
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <h3>
-          <a class="post-link c-slide__content" href="{{ post.url | relative_url }}">
+          <a class="post-link" href="{{ post.url | relative_url }}">
           <div class="image">
              <!-- added a thumbnail that you can click on-->
             <p>{% if post.thumbnail %}
-            <img class="thmb c-slide__image" src="{{ post.thumbnail }}"/>
+            <img class="thmb" src="{{ post.thumbnail }}"/>
             {% else %}
-            <img class="thmb c-slide__image" src="http://placehold.it/780x480&text=No+Thumbnail+available"/>
+            <img class="thmb" src="http://placehold.it/780x480&text=No+Thumbnail+available"/>
             {% endif %}</p>
            <!--end of thumbnail statement-->
          </div>

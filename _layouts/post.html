@@ -21,7 +21,7 @@ layout: default
   <!-- For the Codepen Challenge of January 2019 -->
 <div class="o-wrapper">
   <header class="c-header">
-    <h2>RELATED POSTS</h2>
+    <h2>Related Posts</h2>
     <div class="c-drag">
      << SWIPE >>
     </div>
@@ -157,13 +157,24 @@ const handleSwipeRight = () => {
 
 init();
 </script>
-
-  <div class="rec-posts">
-    <h2>RECENT POSTS</h2>
-  {%- for post in site.posts limit: 3 -%} 
+<div class="home">
+<h2 class="post-list-heading">Recent Posts</h2>
+  <div class="post-list">
+  {%- assign empt = false -%}
+  {%- for post in site.posts limit: 6 -%} 
+      {%- if post != page -%}
+      {% include make_postlist.html %}
+      {%- else -%}
+      {%- assign empt = true -%}
+      {%- endif -%}
+  {%- endfor -%}
+  {%- if empt == true -%}
+  {%- for post in site.posts offset: 6 limit: 1 -%} 
       {% include make_postlist.html %}
   {%- endfor -%}
+  {%- endif -%}
   </div>
+</div>
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
