@@ -868,7 +868,7 @@ h2 {
 }
 
 .c-slide {
-  height: 200px;
+  height: 320px;
   font-weight: normal;
   margin-right: 20px;
   background: #FFFFFF;
@@ -889,16 +889,25 @@ h2 {
 
 .c-slide__content {
   display: flex;
-  width: 380px;
-  height: 220px;
+  width: 200px;
+  height: 320px;
+  @include media-query($on-palm) {
+    width: 150px;
+  }
 }
 
 .c-slide .post-info {
-  font-size: 0.5em;
+  display: flex;
+  font-size: 0.4em;
   color: black;
   font-family: serif;
-  margin-top: 20px;
   margin-left: 10px;
+  font-weight: bolder;
+}
+
+
+.c-slide .post-meta {
+  font-size: 1em;
 }
 
 .c-slide__image {
@@ -909,6 +918,12 @@ h2 {
   max-width: 200px;
   min-height: 200px;
   max-height: 200px;
+  @include media-query($on-palm) {
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 150px;
+  max-height: 150px;
+  }
   margin-right: 0;
 }
 
@@ -916,6 +931,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-query($on-palm) {
+    display: block;
+  }
 }
 
 .c-drag {
