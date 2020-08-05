@@ -103,10 +103,8 @@ const handleTouchMove = e => {
   const touchDiff = touchDown - touchUp
 
   if (touchDiff > 0) {
-    info.innerHTML = 'Swiping left!';
     handleSwipeLeft();
   } else {
-    info.innerHTML = 'Swiping right!';
     handleSwipeRight();
   }
 
