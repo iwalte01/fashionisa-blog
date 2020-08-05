@@ -14,32 +14,153 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
   </header>
-
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-  <div class="related-posts">
+<div class="rec-posts">
+  <!-- For the Codepen Challenge of January 2019 -->
+<div class="o-wrapper">
+  <header class="c-header">
     <h2>RELATED POSTS</h2>
-    <!--need to format and test for bugs-->
-      <!--include thumbnail image, title, and links to that page and eveerything-- but change the format-should i do all the related posts or just 3? - meh all of them and a scroll left right <> thing-->
-      <!--loop through all the posts on the website-->
-      {%- for post in site.posts -%} 
-       {%- assign tg = false -%} <!-- reset to false for the next post-->
-       {%- if post != page -%} <!-- make sure the post and the page aren't the same-->
+    <div class="c-drag">
+      Swipe Right or Left
+    </div>
+  </header>
+  <div class="c-slider">
+   {%- for post in site.posts -%} 
+        {%- assign tg = false -%} <!--reset to false for the next post-->
+        {%- if post != page -%}  <!--make sure the post and the page aren't the same-->
         {%- for x in post.tags -%} <!--go through all of the tags on this page-->
           {%- if page.tags contains x -%} 
-            {%- assign tg = true -%} <!-- need to format this-->
-            <!-- we only need to know if the post has any of the tags that are in the current article,, hence the break-->
+            {%- assign tg = true -%} <!--we only need to know if the post has any of the tags that are in the current article,, hence the break-->
             {%- break -%}
           {%- endif -%}
         {%- endfor -%}
         {%- if tg == true -%}
+        <div class="c-slide">
           {% include make_postlist.html %}
+        </div>
         {%- endif -%} 
         {%- endif -%}
-    {%- endfor -%}
-    <!-- if there are no tags that match/not enough posts, then don't include this section or do 3 most recent posts of that categoryyyy - then my related posts thing will be longerrr - need to have lots and lots of tagsss - alternatively I could just hide the related posts section if no tags relate??? idk-->
+  {%- endfor -%}
   </div>
+</div>
+<script>
+  const slider = document.getElementsByClassName('c-slider')[0];
+const timeline = new TimelineLite();
+const info = document.getElementsByClassName('c-drag')[0];
+
+let canMove = false;
+let touchDown = 0;
+let prevX = 0;
+let slides = document.getElementsByClassName('c-slide');
+const slideWidth = slides[0].offsetWidth + 20;
+
+
+const init = () => {
+  slider.addEventListener('mousedown', handleMouse);
+  slider.addEventListener('mouseup', handleMouse);
+  slider.addEventListener('mousemove', handleMove);
+  
+  slider.addEventListener('touchstart', handleTouch);
+  slider.addEventListener('touchmove', handleTouchMove);
+};
+
+/* Mouse handlers */
+const handleMouse = e => {
+  if (e.type === 'mouseup') {
+    canMove = false;
+  } else {
+    canMove = true;
+  }
+};
+
+const handleMove = e => {
+  if (e.pageX < prevX && canMove) {
+    /* to left */
+    info.innerHTML = 'Swiping left!';
+    handleSwipeLeft();
+    canMove = false;
+  } else if (e.pageX > prevX && canMove) {
+    /* to right */
+    info.innerHTML = 'Swiping right!';
+    handleSwipeRight();
+    canMove = false;
+  }
+
+  prevX = e.pageX;
+};
+
+/* Touch handlers */
+const handleTouch = e => {
+  touchDown = e.touches[0].clientX
+}
+
+const handleTouchMove = e => {
+  if (!touchDown) {
+    return
+  }
+
+  const touchUp = e.touches[0].clientX
+  const touchDiff = touchDown - touchUp
+
+  if (touchDiff > 0) {
+    info.innerHTML = 'Swiping left!';
+    handleSwipeLeft();
+  } else {
+    info.innerHTML = 'Swiping right!';
+    handleSwipeRight();
+  }
+
+   touchDown = null
+ };
+
+/* Swipe handlers */
+const handleSwipeLeft = () => {  
+  timeline.fromTo(slider, 1, 
+    {
+      x: '0px'
+    },
+    {
+      x: `-${slideWidth}px`,
+      ease: Power4.easeOut
+    }
+  );
+  
+  timeline.to(slider, 0.001, 
+    {
+      x: '0px',
+      onComplete: () => {
+        slider.appendChild(slides[0]);
+        slides = document.getElementsByClassName('c-slide');
+      }
+    }
+  );
+};
+
+const handleSwipeRight = () => {  
+  timeline.to(slider, 0.001, 
+    {
+      x: `-${slideWidth}px`,
+      onComplete: () => {
+        const first = slides[0];
+        const last = slides[slides.length - 1];
+        slider.insertBefore(last, first);
+        slides = document.getElementsByClassName('c-slide');
+      }
+    }
+  );
+  
+  timeline.to(slider, 1, 
+    {
+      x: `0px`,
+      ease: Power4.easeOut
+    }
+  );
+};
+
+init();
+</script>
 
   <div class="rec-posts">
     <h2>RECENT POSTS</h2>
@@ -53,4 +174,5 @@ layout: default
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
 </article>
