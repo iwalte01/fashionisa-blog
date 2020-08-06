@@ -538,7 +538,7 @@ text-align: center;
   display: flex;
   margin-left: $on-laptop/5.3;
   @include media-query(550px){
-      margin-left: $on-palm/7.5;
+      margin-left: $on-palm/7.8;
       margin-top: 15px; 
   } 
 }
