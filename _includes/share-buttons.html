@@ -1,0 +1,11 @@
+<div class="share-buttons">
+
+<!--facebook share link-->
+<a href="https://www.facebook.com/sharer.php?u={{post.url}}" rel="nofollow" target="_blank"><svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg></a>
+
+<a href="https://pinterest.com/pin/create/bookmarklet/?media={{post.thumbnail}}&url={{page.url}}&is_video=[is_video]&description={{page.title}}" rel="nofollow" target="_blank">
+<svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#pinterest' | relative_url }}"></use></svg></a>
+
+<a $email = 'mailto:?subject=' . ${{page.title}} . '&body="Check out this site: '. ${{page.url}} .'" title=""Share by Email';">EMAIL??</a>
+
+</div>
