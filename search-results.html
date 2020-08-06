@@ -5,35 +5,27 @@ title: Results for
 ---
 
 <!-- added the rest of the search stuff - could do search.js file ooh-->
-<input type="text" id="search-input" placeholder="Search..." oninput="showMore()" onkeypress="more()"><br>
+<input type="text" id="search-input" placeholder="Search..." oninput="more()"><br>
 <div id="res"></div>
 {% include search.html %}
 <button id="load">SEE MORE</button>
 
 <script>
+
 function showMore(){
- 	if(document.getElementById("search-input").value.length == 0){
-	   document.getElementById("load").style.display = 'none';
-	   document.getElementById("res").style.display = 'none';
-	}else{
-		document.getElementById("res").style.display = 'block';
-	  var x =  document.getElementById("search-input").value; 
+    if(document.getElementById("search-input").value.length == 0){
+       document.getElementById("load").style.display = 'none';
+       document.getElementById("res").style.display = 'none';
+    }else{
+        document.getElementById("res").style.display = 'block';
+      var x =  document.getElementById("search-input").value; 
     document.getElementById("res").innerHTML = "Results for '" + x + "'"; 
- 		document.getElementById("load").style.display = 'block';
-	}
+        document.getElementById("load").style.display = 'block';
+    }
 }
 
-jQuery(function($) {
-  var input = $("#search-input");
-  input.on("keydown", function() {
-    var key = event.keyCode || event.charCode;
-
-    if( key == 8 || key == 46 )
-        more();
-  });
-});
-
 function more(){
+    showMore();
     $(function(){
     $("#results-container li").slice(0, 5).show(); // select the first ten
     if($("#results-container li:hidden").length == 0){ // check if any hidden divs exist
