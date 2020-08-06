@@ -39,6 +39,9 @@ jekyll_analytics:
   GoogleAnalytics:
     id: UA-174454814-1
 
+#facebook id for sharing
+facebook_app_id: 747872315961323
+
 # Build settings
 # removed minima theme, as it is now a regular theme
 # theme: minima
