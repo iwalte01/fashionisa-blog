@@ -5,7 +5,7 @@ title: Results for
 ---
 
 <!-- added the rest of the search stuff - could do search.js file ooh-->
-<input type="text" id="search-input" placeholder="Search..." oninput="showMore()"><br>
+<input type="text" id="search-input" placeholder="Search..." oninput="showMore()" onkeypress="more()"><br>
 <div id="res"></div>
 {% include search.html %}
 <button id="load">SEE MORE</button>
@@ -23,14 +23,29 @@ function showMore(){
 	}
 }
 
-$(function(){
+jQuery(function($) {
+  var input = $("#search-input");
+  input.on("keydown", function() {
+    var key = event.keyCode || event.charCode;
+
+    if( key == 8 || key == 46 )
+        more();
+  });
+});
+
+function more(){
+    $(function(){
     $("#results-container li").slice(0, 5).show(); // select the first ten
+    if($("#results-container li:hidden").length == 0){ // check if any hidden divs exist
+           $("#load").hide(); // alert if there are none left
+    }
     $("#load").click(function(e){ // click event for load more
         e.preventDefault();
         $("#results-container li:hidden").slice(0, 5).show(); // select next 5 posts
-        if($("#results-container li:hidden").length == 0){ // check if any hidden divs exist
+       if($("#results-container li:hidden").length == 0){ // check if any hidden divs exist
            $("#load").hide(); // alert if there are none left
- 		   }
+       }
     });
 });
+}
 </script>
