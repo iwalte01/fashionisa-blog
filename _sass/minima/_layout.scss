@@ -549,6 +549,15 @@ text-align: center;
   @include media-query(550px){
       width: $on-palm/5; 
   } 
+  border: none;
+  padding: 6px;
+}
+
+.modal form button{
+
+ background-color: white;
+ color: $background-color;
+ border: none;
 
 }
 
