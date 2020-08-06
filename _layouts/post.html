@@ -13,7 +13,8 @@ layout: default
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
-      {%- include share-buttons.html -%}
+      <!--added inline share buttons on sharethis analytics-->
+      <div class="sharethis-inline-share-buttons"></div>
   </header>
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
