@@ -173,6 +173,8 @@ article {
   &:not(:first-child){
        margin-left: 25px; //changed from 25 to 20
   }
+  //makke everything white
+  color: white;
 }
 
 //need to wrap every element reeee
@@ -805,11 +807,8 @@ font-family: serif;
   border: none;
   background-color: white;
   margin-left: -5px;
+  font-weight: bold;
 }
-#srch:hover {
-  border-bottom: 2px solid black;
-}
-
 
 /*
  *Search Page 
