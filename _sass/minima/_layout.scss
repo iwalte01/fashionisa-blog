@@ -804,6 +804,10 @@ font-family: serif;
   color: black;
   border: none;
   background-color: white;
+  margin-left: -5px;
+}
+#srch:hover {
+  border-bottom: 2px solid black;
 }
 
 
@@ -812,9 +816,11 @@ font-family: serif;
  */
 
 #search-input {
-    width: 80%;
+    width: 75%;
     position: center;
     margin-left: 11%;
+    padding: 4px;
+    font-size: 1.3em;
 }
 
 #results-container {
