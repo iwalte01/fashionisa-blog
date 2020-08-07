@@ -173,7 +173,11 @@ article {
   &:not(:first-child){
        margin-left: 25px; //changed from 25 to 20
   }
-  background-color: black;
+}
+
+.social-media-list a {
+  color: $grey-color-light;
+  font-weight: bolder;
 }
 
 //need to wrap every element reeee
