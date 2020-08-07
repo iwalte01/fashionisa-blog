@@ -173,8 +173,7 @@ article {
   &:not(:first-child){
        margin-left: 25px; //changed from 25 to 20
   }
-  //makke everything white
-  color: white;
+  background-color: black;
 }
 
 //need to wrap every element reeee
