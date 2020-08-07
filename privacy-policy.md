@@ -4,7 +4,7 @@ title: Fashionisa Privacy Policy
 permalink: /privacy-policy/
 ---
 
-This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from https://itwalters22.github.io/fashionisa-blog/ (the “Site”).
+This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from https://iwalte01.github.io/fashionisa-blog/ (the “Site”).
 
 PERSONAL INFORMATION WE COLLECT
 
