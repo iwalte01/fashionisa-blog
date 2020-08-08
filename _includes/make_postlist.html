@@ -14,10 +14,15 @@
          </div>
          <div class="post-info">
          <div class="txt-box">
-            <p class="cat"> {%- if post.category -%}
-              {{ post.category }}
-            {%- endif -%}</p>
-             <span class="post-meta"> {{ post.date | date: date_format }}</span> <!-- moved the date here-->
+            <p class="post-meta">
+            {%- if post.category -%}
+            <span itemprop="category"><span class="cat" itemprop="category">{{ post.category }}</span></span>
+            {%- endif -%}
+            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            {{ post.date | date: date_format }}
+            </time>
+          </p>
             <h3 class="p-title">{{ post.title | escape }}</h3> <!-- added a heading around this to separate it-->
              <!-- show the description -->
             <p class="des">{%- if post.description -%}

@@ -29,7 +29,7 @@ layout: default
   <!-- For the Codepen Challenge of January 2019 -->
 <div class="o-wrapper">
   <header class="c-header">
-    <h2>Related Posts</h2>
+    <h2 class="post-list-heading">Related Posts</h2>
     <div class="c-drag">
      << SWIPE >>
     </div>
@@ -52,6 +52,7 @@ layout: default
         {%- endif -%}
   {%- endfor -%}
   </div>
+</div>
 </div>
 <script>
   const slider = document.getElementsByClassName('c-slider')[0];
@@ -167,7 +168,7 @@ init();
 </script>
 <div class="home">
 <h2 class="post-list-heading">Recent Posts</h2>
-  <div class="post-list">
+  <div class="post-list rec-posts">
   {%- assign empt = false -%}
   {%- for post in site.posts limit: 6 -%} 
       {%- if post != page -%}

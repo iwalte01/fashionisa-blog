@@ -13,7 +13,7 @@
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  searchResultTemplate: '<li><h3><a href="{url}" class="post-link"><div class="image"><p><img class="thmb" src="{thumbnail}"></p></div><div class="post-info"><div class="txt-box"><p class="cat">{category}</p><span class="post-meta">{date}</span><h3 class="p-title">{title}</h3><p class="des">{description}</p></div></div></a></h3></li>',
+  searchResultTemplate: '<li><h3><a href="{url}" class="post-link"><div class="image"><p><img class="thmb" src="{thumbnail}"></p></div><div class="post-info"><div class="txt-box"><p class="post-meta"><span itemprop="category"><span class="cat" itemprop="category">{category}</span></span><time class="dt-published" datetime="{date}" itemprop="datePublished">{date}</time></p><h3 class="p-title">{title}</h3><p class="des">{description}</p></div></div></a></h3></li>',
   noResultsText:'<p id="no-result"> No Results Found </p>',
   json: '/fashionisa-blog/search.json'
 })

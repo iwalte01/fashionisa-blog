@@ -640,22 +640,29 @@ font-family: serif;
     .p-title {
         font-size: 1em;
         font-family: serif;
-        font-weight: bold;
+        font-weight: bolder;
     }
     .des {
       font-size: 0.7em;
     }
     .txt-box {
       margin: 20px;
-      .cat {
-      font-size: 0.6em;
+     .post-meta {
+      font-weight: 500px;
+        .dt-published {
+          font-size: 0.6em;
+        }
       }
     }
   }
 
   .post-list .thmb {
     height: 200px;
-    max-width: 100%;
+    //max-width: 100%;
+    @include media-query(820px){
+      width: 230px;
+    }
+    width: 240px;
   }
 
   .latest-post {
@@ -672,16 +679,20 @@ font-family: serif;
 
   //control the sizes and styles of each grid element
   .post-list li .post-info {
-    width: fill;
-    height: 250px;
+    word-wrap: break-word;
+    @include media-query(820px){
+      width: 230px;
+    }
+    width: 240px;
+    height: 260px;
     background-color: white;
     margin-top: -30px;
     color: black;
     text-align: left;
     .p-title {
-        font-size: 0.75em;
+        font-size: 0.9em;
         font-family: serif;
-        font-weight: bold;
+        font-weight: bolder;
     }
     .des {
       font-size: 0.5em;
@@ -690,8 +701,14 @@ font-family: serif;
     .txt-box {
       margin: 20px;
       padding-top: 30px;
-      .cat {
-        font-size: 0.5em;
+      .post-meta {
+      font-weight: 500px;
+        .dt-published {
+          font-size: 0.6em;
+        }
+        .cat:after {
+          width: 25px;
+        }
       }
     }
   }
@@ -704,11 +721,13 @@ font-family: serif;
 
     .post-list li .post-link .post-info {
       //responsive width
-      width: fill;
-      height: 250px;
+     // width: fill;
+      //max-width: 100%;
+      width: 100%;
+      height: 280px;
       padding-top: 20px;
       padding-bottom: 10px;
-      text-overflow: wrap;
+       word-wrap: break-word;
       .txt-box {
         margin: 20px;
       }
@@ -716,6 +735,7 @@ font-family: serif;
 
     .post-list li .post-link .thmb {
       //responsive height
+      max-width: 100%;
       width: 100%;
       height: auto;
       margin-bottom: -20px;
@@ -736,12 +756,15 @@ font-family: serif;
     .latest-post .post-link .post-info {
       //responsive width
       width: fill;
-      height: 200px;
+      height: 260px;
       //fit the text into the box
       padding-top: 20px;
       padding-bottom: 60px;
       .txt-box{
         margin: 20px;
+        .post-meta .cat {
+          font-weight: 500px;
+        }
       }
     }
 
@@ -786,13 +809,13 @@ font-family: serif;
     background-color: white;
     height: 200px;
     color: black;
-    text-overflow: wrap;
+    word-wrap: break-word;
     text-align: left;
     border-bottom: 1px solid $grey-color-light;
     .p-title {
-        font-size: 0.75em;
+        font-size: 0.9em;
         font-family: serif;
-        font-weight: bold;
+        font-weight: bolder;
     }
     .des {
       font-size: 0.5em;
@@ -800,8 +823,14 @@ font-family: serif;
 
     .txt-box {
       padding: 10px;
-      .cat {
-        font-size: 0.5em;
+      .post-meta .cat {
+          font-weight: bold;
+      }
+      .dt-published{
+        font-size: 0.6em;
+      }
+      .post-meta .cat:after {
+          width: 30px;
       }
     }
   }
@@ -816,13 +845,22 @@ font-family: serif;
     .post-list li .post-link .post-info {
       //responsive width
       width: fill;
-      height: 250px;
+      height: 270px;
       padding-top: 10px;
       padding-bottom: 10px;
       border-bottom: none;
       text-overflow: wrap;
       .txt-box {
         margin: 20px;
+        .post-meta .cat {
+          font-weight: bold;
+        }
+      .dt-published{
+        font-size: 0.6em;
+      }
+      .post-meta .cat:after {
+          width: 30px;
+      }
       }
       margin-top: -20px;
     }
@@ -898,7 +936,7 @@ font-family: serif;
 
 
 //added stuff for related posts scrolling
-.rel-posts{
+.rel-posts {
 h2 {
   padding: 0;
 }
@@ -924,7 +962,8 @@ h2 {
   @include media-query($on-palm) {
     height: 300px;
   }
-  font-weight: normal;
+ // font-weight: regular;
+
   margin-right: 20px;
   background: #FFFFFF;
   //border-radius: 3px;
@@ -994,8 +1033,13 @@ h2 {
 .c-drag {
   opacity: 0.2;
 }
-
-.post-meta {
-  font-size: 1em;
 }
+
+.home .rec-posts {
+  .post-meta {
+  font-size: 1em;
+  }
+  .post-meta .cat:after {
+    width: 25px;
+  }
 }
