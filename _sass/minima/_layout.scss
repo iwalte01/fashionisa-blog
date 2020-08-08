@@ -341,16 +341,10 @@ text-align: center;
 
 .p-author {
   float: left;
-  margin-right: 20px;
+  margin-right: 25px;
   font-size: $small-font-size;
   color: black;
-}
-
-.p-author a {    
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-  font-size: $small-font-size;
+  font-weight: bold;
 }
 
 .share-bar {
@@ -958,9 +952,9 @@ h2 {
 }
 
 .c-slide {
-  height: 370px;
+  height: 390px;
   @include media-query($on-palm) {
-    height: 300px;
+    height: 350px;
   }
  // font-weight: regular;
 
@@ -985,24 +979,54 @@ h2 {
   display: flex;
   width: 200px;
   @include media-query($on-palm) {
-    width: 150px;
+    width: 180px;
   }
 }
 
 .c-slide .post-info {
   display: flex;
-  font-size: 0.45em;
-  @include media-query($on-palm) {
-    font-size: 0.4em;
-  }
   color: black;
   font-family: serif;
   margin-left: 10px;
+  word-wrap: break-word;
+  .txt-box {
+        .post-meta .cat {
+          font-weight: bold;
+          font-size: 0.7em;
+        }
+      .dt-published{
+        font-size: 0.7em;
+      }
+      .post-meta .cat:after {
+          width: 10px;
+      }
+      .p-title {
+        font-weight: bolder;
+        font-size: 0.7em;
+      }
+      .des {
+        font-size: 0.5em;
+      }
+  }
+   @include media-query($on-palm) {
+  .txt-box {
+      .post-meta .cat {
+          font-weight: bold;
+          font-size: 0.6em;
+        }
+      .dt-published{
+        font-size: 0.6em;
+      }
+      .p-title {
+        font-weight: bolder;
+        font-size: 0.6em;
+      }
+       .des {
+        font-size: 0.4em;
+      }
+  }
+  }
 }
-.c-slide .p-title {
-  font-weight: bolder;
-}
-
 
 .c-slide__image {
   display: flex;
@@ -1013,10 +1037,10 @@ h2 {
   min-height: 200px;
   max-height: 200px;
   @include media-query($on-palm) {
-  min-width: 150px;
-  max-width: 150px;
-  min-height: 150px;
-  max-height: 150px;
+  min-width: 180px;
+  max-width: 180px;
+  min-height: 180px;
+  max-height: 180px;
   }
   margin-right: 0;
 }

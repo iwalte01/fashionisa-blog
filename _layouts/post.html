@@ -17,7 +17,7 @@ layout: default
       <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
       <span class="auth-share">
       {%- if site.author -%}
-        <span itemprop="author"><span class="p-author h-card" itemprop="name"> by <a>{{ site.author }} </a></span></span> <!--itemscope itemtype="http://schema.org/Person"-->
+        <span itemprop="author"><span class="p-author h-card" itemprop="name"> by {{ site.author }} </span></span> <!--itemscope itemtype="http://schema.org/Person"-->
       {%- endif -%}
             <!--added inline share buttons-->
       {%- include share-bar.html -%}</span>
