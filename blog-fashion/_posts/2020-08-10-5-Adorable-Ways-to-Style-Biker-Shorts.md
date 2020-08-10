@@ -15,15 +15,16 @@ tags: [summer, cute, trends]
 }
 </style>
 
-One of the biggest fashion trends of summer 2020 is biker shorts. If you’re going for a casual or sporty look, you can’t go wrong with these shorts. Even if you need to look more put together for a zoom interview or for running an errand, I guarantee that you can style these shorts into a cute outfit. If you want to rock these shorts, look no further than this post for inspiration.
+One of the biggest fashion trends of summer 2020 is biker shorts. If you’re going for a casual or sporty look, you can’t go wrong with these shorts. Even if you need to look more put together for a zoom interview or for running an errand, I guarantee that you can style these shorts into a cute outfit. If you want to rock these shorts, look no further than this post for some inspiration.
 
 <p class="lst-item">1. The Sporty Look</p>
 
-This is a great look for chilling in your house or for running errands. It’s also great for if you just worked out and you don’t really want to change out of your gym clothes. Pairing a crop top with biker shorts is pretty ubiquitous, but you’ll stand out more if you add jewelry. I picked silver and black jewelry to fit with the color scheme. Fun fact about the necklace: it’s actually an essential oil necklace that you can unscrew and rub the essential oil on your wrists and neck. It’s great for stress relief!
+This is a great look for chilling in your house or for running errands. It’s also super convenient because it doubles as an outfit to work out in. Pairing a crop top with biker shorts is pretty basic, but if you add some cool jewelry you'll definitely stand out more. I picked silver and black jewelry to fit with the color scheme. Fun fact about the necklace: it’s actually an essential oil necklace that you can unscrew and rub the essential oil on your wrists and neck. It’s great for stress relief!
 
 <img src="/fashionisa-blog/images/5_Adorable_Ways_Biker_Shorts/biker-shorts-thumbnail.jpg" height="400px">
 
-The cropped sweatshirt I’m wearing I bought years ago at Zara, the earrings are Kenneth Cole Reaction, and the essential oils necklace was my mother’s from when she lived in NYC, but you can find some gorgeous ones on Etsy.
+The earrings I'm wearing in this look are Kenneth Cole Reaction, and the essential oils necklace was my mother’s from when she lived in NYC, but you can find similar ones on Etsy.
+
 And that’s the tea on how to stay cute, comfy, and chill during quarantine!
 
 <p class="lst-item">2. The Luxury Look</p>
@@ -40,12 +41,12 @@ This outfit is an outfit I’d wear almost every day to be honest. You can make 
 
 <p class="lst-item">4. The Casual Look</p>
 
-This is probably the most common way to style biker shorts, but hey, it works! If you really just want to look casual, pair your biker shorts with a long sleeved oversized shirt or a hoodie. Unfortunately the long sleeved shirt I’m wearing is actually my dad’s from when he performed with the Joffrey Ballet, so I don’t think these are sold anywhere. Any oversized shirt with a cool graphic will do for this look, though! I went for silver and black earrings for this look because I’m wearing a lot of black and white, but if you add a more colorful t-shirt, then I suggest trying some gold earrings with the outfit.
+This is probably the most ubiquitous way of styling biker shorts, but hey, it works! If you really just want to look casual, pair your biker shorts with an oversized shirt or a hoodie. Unfortunately the long sleeved shirt I’m wearing is actually my dad’s from when he performed with the Joffrey Ballet, so I don’t think these are sold anywhere. Any oversized shirt with a cool graphic will do for this look, though! I went for silver and black earrings for this look because I’m wearing a lot of black and white, but if I had chosen a more colorful t-shirt I would have added gold jewelry.
 
 <img src="/fashionisa-blog/images/5_Adorable_Ways_Biker_Shorts/biker-shorts-outfit-4.jpg" height="400px">
 
 <p class="lst-item">5. The Fancy Look</p>
 
-I am actually really in love with this look because it gives off fancy vibes even though you’re basically wearing gym clothes. I’d say this is a good outfit if you don’t have a lot of time to change before a night out, because if you’ve been wearing outfit #2 all day you can easily dress it up to look like this. Also, if you don’t like the biker shorts with this outfit, you can just throw on a black skirt and you’ll look stunning.
+I am actually really in love with this look because it gives off fancy vibes even though I'm basically wearing gym clothes. I’d say this is a good outfit for if you don’t have a lot of time to change before a night out, because if you’ve been wearing outfit #2 all day you can easily dress it up to look like this. Also, if you don’t like the biker shorts with this outfit, you can just throw on a black skirt and you’ll look stunning.
 
 <img src="/fashionisa-blog/images/5_Adorable_Ways_Biker_Shorts/biker-shorts-outfit-5.jpg" height="300px">
