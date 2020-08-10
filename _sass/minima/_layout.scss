@@ -530,8 +530,14 @@ text-align: center;
 
   font-family: serif;
 
+  .latest-post .post-link { //only applies to the latest post
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
   .latest-post .thmb {
-    max-width: 100%;
+    //max-width: 100%;
+    width: fill;
     height: 400px;
   }
 
@@ -644,11 +650,6 @@ text-align: center;
     }
   }
 
-  .latest-post .post-link { //only applies to the latest post
-    display: grid;
-    grid-template-columns: 1fr 0.5fr;
-  }
-
   @include media-query($on-palm) {
 
     .latest-post .post-link {
@@ -699,12 +700,13 @@ text-align: center;
 
  .post-link {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 1fr;
     margin-bottom: -45px;
   }
 
   .post-link .thmb {
-    max-width: 100%;
+    //max-width: 100%;
+    width: 250px;
     height: 200px;
     border-bottom: 1px solid $grey-color-light;
   }
