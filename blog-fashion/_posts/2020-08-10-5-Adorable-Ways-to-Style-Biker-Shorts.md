@@ -3,7 +3,7 @@ layout: post
 title:  "5 Adorable Ways to Style Biker Shorts"
 date:   2020-08-10 15:40:00 -400
 category: Fashion
-description: 0th post
+description: You'll be cute and comfy!
 permalink: /5-Adorable-Ways-to-Style-Biker-Shorts/
 thumbnail: https://iwalte01.github.io/fashionisa-blog/images/5_Adorable_Ways_Biker_Shorts/biker-shorts-thumbnail.jpg
 image: https://iwalte01.github.io/fashionisa-blog/images/5_Adorable_Ways_Biker_Shorts/biker-shorts-thumbnail.jpg
