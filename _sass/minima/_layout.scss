@@ -566,12 +566,23 @@ text-align: center;
     }
   }
 
+  .post-list .image {
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-width: 240px;
+     @include media-query(820px){
+      max-width: 230px;
+    } 
+  }
+
   .post-list .thmb {
-    height: 200px;
-    @include media-query(820px){
-      width: 230px;
-    }
-    width: 240px;
+ // height: 200px;
+   // @include media-query(820px){
+     // width: 230px;
+    //} 
+    //width: 240px; 
   }
 
   .latest-post {
@@ -641,6 +652,11 @@ text-align: center;
       }
     }
 
+    .post-list .image {
+      max-width: 100%;
+      max-height: 100%;
+      display: inline;
+    }
     .post-list li .post-link .thmb {
       //responsive height
       max-width: 100%;
@@ -682,6 +698,15 @@ text-align: center;
 /* Fashion, Lifestyle, and Search Pages */
 
 .home-second {
+  
+  .post-link .image {
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-width: 250px;
+    min-width: 250px;
+  }
 
   font-family: serif;
 
@@ -706,8 +731,8 @@ text-align: center;
 
   .post-link .thmb {
     //max-width: 100%;
-    width: 250px;
-    height: 200px;
+   /* width: 250px;
+    height: 200px; */
     border-bottom: 1px solid $grey-color-light;
   }
 
@@ -746,6 +771,12 @@ text-align: center;
     .post-link {
       display: block;
       margin-bottom: 0;
+    }
+
+    .post-link .image {
+      max-width: 100%;
+      max-height: 100%;
+      display: inline;
     }
 
     .post-list li .post-link .post-info {
