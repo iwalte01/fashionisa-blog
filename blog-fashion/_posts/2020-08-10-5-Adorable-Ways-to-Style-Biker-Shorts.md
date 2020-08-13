@@ -35,7 +35,7 @@ Are you someone who is on a serious budget but still wants to look like you drop
 
 <p class="lst-item">3. The Busy College Student Look</p>
 
-You'll definitely see me wearing this outfit during the school week when I go back to college. My favorite thing about this look is that you can make it super casual by wearing tennis shoes or you can dress it up with some heels. In the picture I’m wearing special tennis shoes that my doctor told me to wear for my arch problems, but I think that white tennis shoes would look even better with this outfit. I also love this look because you can tie the denim jacket around your waist during the day and then wear it when it gets colder at night, which is perfect for if you go to school up north.
+You'll definitely see me wearing this outfit during the school week when I go back to college. My favorite thing about this look is that you can make it super casual by wearing tennis shoes or you can dress it up with some heels. In the picture I’m wearing special tennis shoes that my doctor told me to wear for my arch problems, but I think that white tennis shoes would look even better with this outfit. I also love this look because you can tie the denim jacket around your waist during the day and then wear it when it gets colder at night, which is perfect if you go to school up north.
 
 <img src="/fashionisa-blog/images/5_Adorable_Ways_Biker_Shorts/biker-shorts-outfit-3.jpg" height="300px">
 

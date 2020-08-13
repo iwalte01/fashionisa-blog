@@ -539,6 +539,7 @@ text-align: center;
     //max-width: 100%;
     width: fill;
     height: 400px;
+    max-width: 500px;
   }
 
   .latest-post .post-link .post-info {
@@ -675,6 +676,7 @@ text-align: center;
       width: 100%;
       height: auto;
       margin-bottom: -20px;
+      max-width: 100%;
     }
   }
 }
