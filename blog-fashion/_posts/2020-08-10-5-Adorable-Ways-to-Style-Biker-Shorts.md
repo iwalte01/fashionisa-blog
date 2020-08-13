@@ -5,8 +5,8 @@ date:   2020-08-10 15:40:00 -400
 category: Fashion
 description: You'll be cute and comfy!
 permalink: /5-Adorable-Ways-to-Style-Biker-Shorts/
-thumbnail: https://iwalte01.github.io/fashionisa-blog/images/5_Adorable_Ways_Biker_Shorts/biker-shorts-thumbnail.jpg
-image: https://iwalte01.github.io/fashionisa-blog/images/5_Adorable_Ways_Biker_Shorts/biker-shorts-thumbnail.jpg
+thumbnail: https://iwalte01.github.io/fashionisa-blog/images/fash1/biker-shorts-thumbnail.jpg
+image: https://iwalte01.github.io/fashionisa-blog/images/fash1/biker-shorts-thumbnail.jpg
 tags: [summer, cute, trends]
 ---
 <style>
