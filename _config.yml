@@ -50,7 +50,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-analytics
- # - searchyll
 
 # Exclude from processing.
 # The following items will not be processed, by default.
