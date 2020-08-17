@@ -7,7 +7,7 @@ description: You'll be cute and comfy!
 permalink: /5-Adorable-Ways-to-Style-Biker-Shorts/
 thumbnail: https://iwalte01.github.io/fashionisa-blog/images/fash1/biker-shorts-thumbnail.jpg
 image: https://iwalte01.github.io/fashionisa-blog/images/fash1/biker-shorts-thumbnail.jpg
-tags: [summer, cute, trends]
+tags: [summer, cute, trends, basic]
 ---
 <style>
 .lst-item {
