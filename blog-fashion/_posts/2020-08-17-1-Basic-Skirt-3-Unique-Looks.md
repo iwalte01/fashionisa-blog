@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "1 Basic Skirt, 3 Unique Looks"
-date:   2020-08-17 7:00:00 -400
+date:   2020-08-17 8:00:00 -400
 category: Fashion
 description: Perfect for the end of summer!
 permalink: /1-Basic-Skirt-3-Unique-Looks/
