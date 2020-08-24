@@ -26,7 +26,7 @@ This outfit will definitely be my go to for socially distanced hangouts this fal
 <p class="lst-item">2.</p>
 <img src="/fashionisa-blog/images/fash3/bts2.jpg" height="300px">
 
-Recently, I’ve gotten really into flare pants; they’re super comfy and flattering in my opinion, and I’m definitely going to be wearing a lot of them when I go up to college. For this look, I paired some flare jeans with a bright red top. Since the other elements of my outfit are solid colors that lack detailing, I chose jeans with lots of buttons and ties (in the back) to give a bit more character to the look. I tied this outfit together by adding black heels and a black headband. While it is realistic for me to wear heels with this look, I might also pair these jeans with some cute black boots if my feet are hurting. 
+Recently, I’ve gotten really into flare pants; they’re super comfy and flattering in my opinion, and I’m definitely going to be wearing a lot of them when I go up to college. For this look, I paired some flare jeans with a bright red top. Since the other elements of my outfit are solid colors that lack detailing, I chose jeans with lots of buttons and ties (in the back) to give a bit more character to the look. Finally, I tied this outfit together with black heels and a black headband. While it is realistic for me to wear heels with this look, I might also pair these jeans with some cute black boots if my feet are hurting. 
 
 <p class="lst-item">3.</p>
 <img src="/fashionisa-blog/images/fash3/bts3.jpg" height="300px">
