@@ -21,7 +21,7 @@ Despite the global pandemic and having mostly online classes, I am really lookin
 <img src="/fashionisa-blog/images/fash3/bts_thumbnail.jpg" height="300px">
 <img src="/fashionisa-blog/images/fash3/bts1.jpg" height="300px">
 
-This outfit will definitely be my go to for socially distanced hangouts this fall because I know it will look really good with a black mask! To create this look, I layered a black mesh shirt over a black lace top and tucked it into wide-legged jean capris that I thrifted from Rumours in NC. I then belted this look with a chunky black and gold statement belt. I chose gold hoop earrings to match the belt, and a black headband that pulls the look together. I also made sure to wear a bold red lip, adding a pop of color to my look. This outfit wouldn’t be complete without some cool shoes, so I have on my Doc Martens (not pictured).
+This outfit will definitely be my go to for socially distanced hangouts this fall because I know it will look really good with a black mask! To create this look, I layered a black mesh shirt over a black lace top and tucked it into wide-legged jean capris that I thrifted from Rumours in NC. I then belted this look with a chunky black and gold statement belt. I added gold hoop earrings to match the belt, and a black headband to pull the look together. I also made sure to wear a bold red lip, adding a pop of color to my look. This outfit wouldn’t be complete without some cool shoes, so I have on my Doc Martens (not pictured).
 
 <p class="lst-item">2.</p>
 <img src="/fashionisa-blog/images/fash3/bts2.jpg" height="300px">
