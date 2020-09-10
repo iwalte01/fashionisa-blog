@@ -20,7 +20,7 @@ During fall, I love to bring pieces from the 70’s into my wardrobe because I t
 
 <p class="lst-item">1. Jackie Burkhart</p>
 
-<a href="https://www.collegefashion.net/wp-content/uploads/2017/02/jackie-burkhart-video-screenshot.jpg"><img src="https://www.collegefashion.net/wp-content/uploads/2017/02/jackie-burkhart-video-screenshot.jpg" height="300px"></a>
+<a href="https://www.collegefashion.net/wp-content/uploads/2017/02/jackie-burkhart-video-screenshot.jpg"><img src="/fashionisa-blog/images/fash4/jackie.jpg" height="300px"></a>
 
 A lot of my friends say I remind them of Jackie Bukhart, so I figured I’d start off with some Jackie-inspired looks. 
 
@@ -35,7 +35,7 @@ For my second Jackie-inspired outfit, I started with Jackie’s go to hairstyle:
 
 <p class="lst-item">2. Steven Hyde</p>
 
-<a href="https://medias.spotern.com/spots/w640/77/77523-1532336916.jpg"><img src="https://medias.spotern.com/spots/w640/77/77523-1532336916.jpg" height="300px"></a>
+<a href="https://medias.spotern.com/spots/w640/77/77523-1532336916.jpg"><img src="/fashionisa-blog/images/fash4/hyde.jpg" height="300px"></a>
 
 While Hyde has a lot of cool outfits on the show, I decided to model my outfits after Hyde’s more casual looks because they were easier to replicate with the wardrobe I have at college.
 
@@ -46,10 +46,12 @@ Hyde usually wears a t-shirt with a rock band on it, but I didn’t have one at 
 
 <p class="lst-item">3. Donna Pinciotti</p>
 
-<a href="https://i.pinimg.com/originals/ce/f0/85/cef085de103d303038c2b8dd40b15be6.jpg"><img src="https://i.pinimg.com/originals/ce/f0/85/cef085de103d303038c2b8dd40b15be6.jpg" height="300px"></a>
+<a href="https://i.pinimg.com/originals/ce/f0/85/cef085de103d303038c2b8dd40b15be6.jpg"><img src="/fashionisa-blog/images/fash4/donna.jpg" height="300px"></a>
 
 And last, but not least, a Donna inspired outfit!
 
 <img src="/fashionisa-blog/images/fash4/70s_6.jpg" height="500px">
 
 Donna is always wearing a bandana, so I used my bandana as the foundation for my outfit. I think that bandanas pair really well with denim, so I decided to include denim flare pants in this look. Donna also wears denim jackets a lot, and if I had brought one that matched the pants to college, I would have layered it over my top. Speaking of my top, I purposefully chose one with multicolored stripes because the green stripes provide a seamless transition from the cool colored pants to the (mostly) warm colored shirt and orange bandana. This look wouldn’t be Donna-inspired if it didn’t include heeled loafers; I added some brown ones.
+
+If you would like to find your own 70s styles, take these ideas and run with them!
