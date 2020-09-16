@@ -22,7 +22,7 @@ I’ve always thought making a good first impression on people depends on how yo
 
 <img src="/fashionisa-blog/images/fash5/weekinlife1.jpg" height="150px">
 <img src="/fashionisa-blog/images/fash5/weekinlifehb.jpg" height="150px">
-<img src="/fashionisa-blog/images/fash5/weekinlife1earrings.jpg" height="150px">
+<img src="/fashionisa-blog/images/fash5/weekinlife1earrings.JPG" height="150px">
 
 On my first day of classes, I spent most of the day outside doing school work. It was pretty hot out on Tuesday, so I put together an outfit that was summer-y and cute. I started with a basic brown slip dress and brown loafers, and added accessories to dress up the look. I chose a cute polka-dot statement headband to add some flair and a gold necklace and teardrop-shaped earrings to add some class to the look. Of course, this look wouldn’t be complete without a mask, so I’m wearing my black cotton one (wear your masks, people!).
 
@@ -45,7 +45,7 @@ Thursdays are my busiest days of the week, but nevertheless I tried to look cute
 
 <img src="/fashionisa-blog/images/fash5/weekinlife4.jpg" height="600px">
 
-<img src="/fashionisa-blog/images/fash5/weekinlife4earrings.jpg" height="200px">
+<img src="/fashionisa-blog/images/fash5/weekinlife4earrings.JPG" height="200px">
 
 This is definitely my favorite look of the week because it reminds me of fall! It finally started to cool off outside on Friday, so I layered my long cardigan over my red floral lace top, which I then paired with my favorite black jean skirt. Because it was starting to feel like fall outside, I decided to wear what I consider to be fall colors (i.e. red, brown, black, gold). Keeping to this color scheme, I accessorized my outfit with my brown snake print belt and some edgy gold hoop earrings. Finally, I threw on my Docs (classic me...). 
 
