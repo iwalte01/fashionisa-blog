@@ -14,7 +14,7 @@ tags: [fall, school, college, inspired]
 	font-weight: bold;
 }
 </style>
-I’ve always thought making a good first impression on people depends on how you present yourself - and for me  part of that is dressing nicely. So, for every day I had classes last week (i.e. my first week of classes) I actually got out of my pajamas/workout clothes and changed into a fashionable outfit. I didn’t have school on Monday because of Labor Day, so I’ve only included my looks from Tuesday through Friday in this post.
+I’ve always thought making a good first impression on people depends on how you present yourself - and for me  part of that is dressing nicely. So, for every day I had classes last week (which was my first week of classes) I actually got out of my pajamas/workout clothes and changed into a fashionable outfit. I didn’t have school on Monday because of Labor Day, so I’ve only included my looks from Tuesday through Friday in this post.
 
 <p class="lst-item">1. Tuesday</p>
 
